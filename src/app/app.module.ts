@@ -7,12 +7,15 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {UiModule} from "./ui/ui.module";
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app-routes";
-import {PagesModule} from "./pages/pages.module";
+import {HomePageComponent} from "./components/home-page/home-page.component";
+import {NavbarComponent} from "./components/navbar/navbar.component";
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomePageComponent,
+        NavbarComponent
     ],
     imports: [
         BrowserModule,
@@ -20,8 +23,7 @@ import {PagesModule} from "./pages/pages.module";
         HttpModule,
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot(),
-        UiModule,
-        PagesModule
+        UiModule
     ],
     providers: [],
     bootstrap: [AppComponent]
