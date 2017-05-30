@@ -1,3 +1,25 @@
-<p>
-  list-user works!
-</p>
+<h3>All Users</h3>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-condensed table-striped table-hover">
+        <thead>
+        <tr>
+            <th>col 1</th>
+            <th>col 2</th>
+            <th>col 3</th>
+            <th>col 4</th>
+            <th>col 5</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let n of [1,2,3,4,5]">
+            <td>data-{{ n }}</td>
+            <td>data-{{ n }}</td>
+            <td>data-{{ n }}</td>
+            <td>data-{{ n }}</td>
+            <td>data-{{ n }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
