@@ -9,13 +9,21 @@ import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app-routes";
 import {HomePageComponent} from "./components/home-page/home-page.component";
 import {NavbarComponent} from "./components/navbar/navbar.component";
+import {MainSidebarComponent} from "./components/main-sidebar/main-sidebar.component";
+import {MainFooterComponent} from "./components/main-footer/main-footer.component";
+import {ControlSidebarComponent} from "./components/control-sidebar/control-sidebar.component";
+import {ContentWrapperComponent} from "./components/content-wrapper/content-wrapper.component";
 
 
 @NgModule({
     declarations: [
         AppComponent,
         HomePageComponent,
-        NavbarComponent
+        NavbarComponent,
+        MainSidebarComponent,
+        MainFooterComponent,
+        ControlSidebarComponent,
+        ContentWrapperComponent
     ],
     imports: [
         BrowserModule,
