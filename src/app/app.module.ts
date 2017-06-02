@@ -14,27 +14,26 @@ import {MainFooterComponent} from "./components/main-footer/main-footer.componen
 import {ControlSidebarComponent} from "./components/control-sidebar/control-sidebar.component";
 import {ContentWrapperComponent} from "./components/content-wrapper/content-wrapper.component";
 
-
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomePageComponent,
-        NavbarComponent,
-        MainSidebarComponent,
-        MainFooterComponent,
-        ControlSidebarComponent,
-        ContentWrapperComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        RouterModule.forRoot(appRoutes),
-        NgbModule.forRoot(),
-        UiModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    NavbarComponent,
+    MainSidebarComponent,
+    MainFooterComponent,
+    ControlSidebarComponent,
+    ContentWrapperComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes),
+    NgbModule.forRoot(),
+    UiModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
